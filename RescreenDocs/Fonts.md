@@ -2,6 +2,8 @@
 
 This repo describes how to use different free fonts(GNU FreeFonts) included in the library. You can follow this guide to choose your favourite font to display on the Rescreen!
 
+<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/WechatIMG2309.jpeg.jpg"/></div>
+
 ## Available Fonts
 
 There are three main fonts that can be used in this lirbrary including `Serif`, `Sans` and `Mono`. Each font is available with few styles(**bold**, *italic*, oblique) and font sizes from 9pt, 12pt, 18pt and 24pt.
