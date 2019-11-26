@@ -4,7 +4,7 @@ This repo describes how to load and display images from the SD card to the TFT L
 
 <div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/WechatIMG2314.jpeg.jpg"/></div>
 
-## Libraries Installion
+## Libraries Installation
 
 ### Installing the SD Card library for Rescreen
 
