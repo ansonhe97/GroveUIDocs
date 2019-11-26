@@ -2,7 +2,7 @@
 
 This repo describes how to load and display images from the SD card to the TFT LCD screen on Rescreen. This can be very usefel implementation to your design and can be used in vairous places!
 
-<div align=center><img width="462" height="300" src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Screenshot.jpg"/></div>
+<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/WechatIMG2314.jpeg.jpg"/></div>
 
 ## Libraries Installion
 
@@ -92,3 +92,9 @@ void setup() {
 void loop() {
 }
 ```
+
+## FAQs
+
+**If `ImportError: No module named PIL`  happened:**
+
+- Install the python module by entering `pip install pillow` in the cmd or terminal
