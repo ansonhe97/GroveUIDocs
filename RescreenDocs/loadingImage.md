@@ -46,19 +46,9 @@ To display bmp images on our embedded system, we need to get rid of some informa
 
 This library is used to make loading and displaying images much easier. Download the `RawImage.h` inside `src` from this repo attach this header file to your sketch location.
 
-### Imgae Initialisation in Arduino
+### Image Initialisation in Arduino
 
-- **To initialise image**
-
-```Cpp
-//when using 8-bit colour, initialise the image following this:
-Raw8 * img8 = newImage<uint8_t>("path to sd card image");
-
-//when using 16-bit colour, initialise the image following this:
-Raw16 * img16 = newImage<uint16_t>("path to sd card image");
-```
-
-- **To display on the screen**
+- **To display images on the screen**
 
 ```Cpp
 //To draw on 8-bit color image on screen, starting from point (x, y):
@@ -66,6 +56,16 @@ drawImage<uint8_t>("path to sd card iamge", x, y);
 
 //To draw on 16-bit color image on screen, starting from point  (x, y):
 drawImage<uint16_t>("path to sd card iamge", x, y);
+```
+
+- **To initialise image (Not needed if using the above drawImage function)**
+
+```Cpp
+//when using 8-bit colour, initialise the image following this:
+Raw8 * img8 = newImage<uint8_t>("path to sd card image");
+
+//when using 16-bit colour, initialise the image following this:
+Raw16 * img16 = newImage<uint16_t>("path to sd card image");
 ```
 
 ## Example code
@@ -84,8 +84,7 @@ void setup() {
     tft.begin();
     tft.setRotation(3);
 
-    Raw8 * eyes = newImage<uint8_t>("test.bmp"); //Inilised a 8-bit image named test.bmp in the sd card
-    drawImage<uint8_t>("test.bmp", 0, 0); //Display this image from (0, 0)
+    drawImage<uint8_t>("test.bmp", 0, 0); //Display this 8-bit image in sd card from (0, 0)
 
 }
 
