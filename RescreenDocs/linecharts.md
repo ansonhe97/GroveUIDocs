@@ -68,7 +68,7 @@ auto header =   text(0, 0)           //starting coordinates of title
 
 To help understanding this exmaple code, please refer the title configurations to the image below:
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/title.png"/></div>
+<div align=center><img width=645 height=374 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/title.png"/></div>
 
 
 ### To initilise settings for the Line Graph and Draw on the LCD Screen
@@ -132,7 +132,7 @@ void loop() {
 
   //Settings for the line graph
     auto content = line_chart(20, header.height()); //(x,y) where the line graph begins
-                 content
+         content
                 .height(tft.height() - header.height() * 1.5) //actual height of the line chart
                 .width(tft.width() - content.x() * 2) //actual width of the line chart
                 .based_on(0.0) //Starting point of y-axis, must be a float
