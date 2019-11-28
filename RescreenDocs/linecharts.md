@@ -66,6 +66,11 @@ auto header =   text(0, 0)           //starting coordinates of title
     header.draw(); 
 ```
 
+To help understanding this exmaple code, please refer the line graph configurations to the image below:
+
+<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/title.png"/></div>
+
+
 ### To initilise settings for the Line Graph and Draw on the LCD Screen
 
 Some settings to configure the desired display of the Line graph. Initialise a `line_chart(x, y)` struct, where `(x, y)` is the starting coordinate of the line graph. And configure settings as below. In this example, `content` is the name of this struct and can change settings and configure like `content.based_on(0.0)` and etc. Alter these settings for prefer display!
@@ -87,7 +92,7 @@ Some settings to configure the desired display of the Line graph. Initialise a `
 
 To help understanding this exmaple code, please refer the line graph configurations to the image below:
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/linegraph.jpg"/></div>
+<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/linegraph2.png"/></div>
 
 ## Complete code
 
