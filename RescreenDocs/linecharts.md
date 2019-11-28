@@ -66,7 +66,7 @@ auto header =   text(0, 0)           //starting coordinates of title
     header.draw(); 
 ```
 
-To help understanding this exmaple code, please refer the line graph configurations to the image below:
+To help understanding this exmaple code, please refer the title configurations to the image below:
 
 <div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/title.png"/></div>
 
