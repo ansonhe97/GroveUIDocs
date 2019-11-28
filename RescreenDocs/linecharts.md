@@ -53,7 +53,7 @@ Some settings to configure the desired display of the title for line graph. Init
 
 ```cpp
     //Settings for the line graph title
-auto header =   text(0, 0)           //starting coordinates of title
+    auto header =   text(0, 0)           //starting coordinates of title
                 .value("test")      //actual title of the line graph
                 .align(center)      //horizontal alignment of title
                 .valign(vcenter)    //vertical alignment of title
