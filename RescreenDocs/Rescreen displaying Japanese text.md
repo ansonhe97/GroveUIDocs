@@ -104,4 +104,4 @@ void loop() {
 
 ## Complete code
 
-Please visit [Japanese_text]() to view the complete code.
+Please visit [Japanese_text](https://github.com/ansonhe97/GroveUIDocs/tree/master/Rescreen%20demo/Japanese_text) to view the complete code.
