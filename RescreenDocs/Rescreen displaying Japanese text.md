@@ -4,7 +4,7 @@
 
 ## Overview
 
-This example simply demonstrates loading two images in the same time to create visual effects, and to make it more fun, the actual is variable according to the inboard accelerator and background is fixed.
+This example simply demonstrates loading two images in the same time to create visual effects, and to make it more fun, the actual text is variable according to the inboard accelerator and background is fixed.
 
 ### Features
 
