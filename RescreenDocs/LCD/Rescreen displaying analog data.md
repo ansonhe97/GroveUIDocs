@@ -26,9 +26,9 @@ This example demonstrates using the line graph functions to display the Grove - 
 
 - **To intialise LCD and Analog port**
 
-<div align=center><img width=333 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-11-28_17-37-44.png"/></div>
+<div align=center><img width=333 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-12-11_17-26-15.jpg"/></div>
 
-As we can see, Rescreen has two Grove ports, one is defualt I2C port and the other is configurable Digital D0, D1 or Analog A0 and A1 ports. In this case, analog port is needed so defined as analog input.
+As we can see, Rescreen has two Grove ports, one is defualt I2C port and the other is configurable Digital D0, D1 or Analog A0 and A1 ports, as well as UART ports. In this case, analog port is needed so defined as analog input.
 
 ```cpp
 #include"seeed_line_chart.h" //include the library
