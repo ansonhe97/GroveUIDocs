@@ -16,6 +16,11 @@ void setup() {
 }
 ```
 
+### Using PWM output
+
+The Grove ports on ReScreen can also be used as PWM output.
+
+
 ### Using I2C as Digital Port
 
 The Grove I2C port can also be used as Digital Port on Rescreen:
@@ -34,25 +39,65 @@ Now, connect your Grove sensor to the physical Grove Port!
 In this example, a Grove Button and Grove LED are used to demonstrate:
 
 ```cpp
-#define BUTTON D0
-#define LED PIN_WIRE_SCL
+#include <Wire.h>
+#include "rgb_lcd.h"
 
-void setup() {
-    Serial.begin(115200);
-    pinMode(BUTTON, INPUT);
-    pinMode(LED, OUTPUT);
+rgb_lcd lcd;
+
+const int colorR = 255;
+const int colorG = 0;
+const int colorB = 0;
+
+void setup() 
+{
+    // set up the LCD's number of columns and rows:
+    lcd.begin(16, 2);
+    
+    lcd.setRGB(colorR, colorG, colorB);
+    
+    // Print a message to the LCD.
+    lcd.print("hello, world!");
+
+    delay(1000);
 }
-void loop() {
-    int buttonState = digitalRead(BUTTON);
-    Serial.print("Button State: ");
-    Serial.println(buttonState);
 
-    if (buttonState == HIGH) {
-        digitalWrite(LED, HIGH);
-    }
-    else {
-        digitalWrite(LED, LOW);
-    }
-    delay(50);
+void loop() 
+{
+    // set the cursor to column 0, line 1
+    // (note: line 1 is the second row, since counting begins with 0):
+    lcd.setCursor(0, 1);
+    // print the number of seconds since reset:
+    lcd.print(millis()/1000);
+
+    delay(100);
 }
 ```
+
+## PWM Output Example Code (Servo)
+
+In this example, a Grove Servo is used to demonstrate PWM output:
+
+```cpp
+#include <Servo.h>
+Servo myservo;
+
+int pos = 0;
+
+void setup() {
+  myservo.attach(D0); //Connect servo to D0
+}
+
+void loop() {
+  for (pos = 0; pos <= 180; pos += 1) {
+    // in steps of 1 degree
+    myservo.write(pos);
+    delay(15);
+  }
+  for (pos = 180; pos >= 0; pos -= 1) {
+    myservo.write(pos);
+    delay(15);
+  }
+}
+```
+
+**Note:** To use the Servo library with ReScreen, please include [Adafruit's version](https://github.com/PaintYourDragon/Servo) for SAMD51 capability.
