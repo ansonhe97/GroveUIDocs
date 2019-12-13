@@ -24,5 +24,4 @@ Once Arduino IDE is installed, some configurations need to be done:
 
 <div align=center><img width = 600 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-12-13_10-55-32.jpg"/></div>
 
-
-1. Now, you can upload your program to ReScreen by selecting the corrent port and **Seeeduino ReScreen(SAMD51)** as Board!
+3. Now, you can upload your program to ReScreen by selecting the corrent port and **Seeeduino ReScreen(SAMD51)** as Board!
