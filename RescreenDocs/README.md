@@ -1,4 +1,4 @@
-# Table of Contens
+# Table of Contents
 
 - TFT LCD Display
 
@@ -13,3 +13,7 @@
 - IO
 
 - File System
+
+- Grove
+
+- USB-Host / USB-Client
