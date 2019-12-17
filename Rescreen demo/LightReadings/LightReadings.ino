@@ -1,27 +1,35 @@
+#include <SPI.h>
+#include <Seeed_FS.h>
+#include "SD/Seeed_SD.h"
 #include"seeed_line_chart.h" //include the library
+
+File myFile;
 TFT_eSPI tft;
 
-#define LIGHT A0
 #define max_size 30 //maximum size of data
 doubles data; //Initilising a doubles type to store data
-
-
 uint16_t buffer[TFT_WIDTH * TFT_HEIGHT];
+int brightness;
 
 void setup() {
+    Serial.begin(115200);
+    if (!SD.begin(SDCARD_SS_PIN, SDCARD_SPI)) {
+        Serial.println("initialization failed!");
+        while(1);
+  }
+    pinMode(A0, INPUT);
     tft.begin();
     tft.setRotation(3);
-    
-    pinMode(LIGHT, INPUT);
 }
 
 void loop() {
-    int state = analogRead(LIGHT);
-    
+    brightness = analogRead(A0);
+
     if (data.size() == max_size) {
         data.pop();//this is used to remove the first read variable
     }
-    data.push(state); //read variables and store in data
+    data.push(brightness); //read variables and store in data
+    saveData();
 
     //Settings for the line graph title
     auto header =  text(0, 0)
@@ -50,5 +58,13 @@ void loop() {
 
     tft.drawToTFT();
     tft.pushImage(0,0, tft.width(), tft.height(), buffer);
-    delay(50);
+    delay(100);
+}
+
+void saveData(){
+     myFile = SD.open("Readings.txt",FILE_APPEND);
+     brightness = analogRead(A0);
+     Serial.println(brightness);
+     myFile.println(brightness);
+     myFile.close();
 }
