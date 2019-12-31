@@ -2,28 +2,27 @@
 
 <div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/2019-12-12%2014-55-44.2019-12-12%2014_56_10.gif"/></div>
 
-This repo demonstates how to use the Grove Digital Port on ReScreen, you can simply use this functionality with the Groe Ecosystem!
+This repo demonstrates how to use the Grove Ports on ReScreen as Digital Ports. You can simply use this functionality to play with the Grove Ecosystem!
 
-## Port Configurations
+## RPI Digital Pins
 
-To use the Grove Port as Digital port, simply define it as follow:
+The Raspberry Pi pinouts are defined as:
 
-**Note:** D0 and D1 are the same Grove Port.
+- `RPI_D0` -> `RPI_D8`
+
+## Grove Port Configurations
+
+To use the **Grove UART Port** as Digital port, simply define it as follow:
 
 ```cpp
 void setup() {
-    pinMode(D0, INPUT); //Configure as D0 Digital port
+    pinMode(PIN_SERIAL1_TX, INPUT); //Configure UART TX as Digital port
 }
 ```
 
-### Using PWM output
+### Using the Grove I2C Port as Digital Port
 
-The Grove ports on ReScreen can also be used as PWM output.
-
-
-### Using I2C as Digital Port
-
-The Grove I2C port can also be used as Digital Port on Rescreen:
+The **Grove I2C port** can also be used as Digital Port on Rescreen:
 
 ```cpp
 void setup() {
@@ -32,44 +31,34 @@ void setup() {
 
 Now, connect your Grove sensor to the physical Grove Port!
 
-**Note:** For more defined variant pin name, please check Schematic and variant.h
+**Note:** For more defined variant pin name, please check Schematic and `variant.h`
 
 ## Example Code
 
 In this example, a Grove Button and Grove LED are used to demonstrate:
 
 ```cpp
-#include <Wire.h>
-#include "rgb_lcd.h"
+#define BUTTON PIN_SERIAL1_TX //Button to Grove UART Port
+#define LED PIN_WIRE_SCL //LED to Grove I2C Port
 
-rgb_lcd lcd;
-
-const int colorR = 255;
-const int colorG = 0;
-const int colorB = 0;
-
-void setup() 
-{
-    // set up the LCD's number of columns and rows:
-    lcd.begin(16, 2);
-    
-    lcd.setRGB(colorR, colorG, colorB);
-    
-    // Print a message to the LCD.
-    lcd.print("hello, world!");
-
-    delay(1000);
+void setup() {
+  Serial.begin(115200);
+  pinMode(BUTTON, INPUT);
+  pinMode(LED, OUTPUT);
 }
 
-void loop() 
-{
-    // set the cursor to column 0, line 1
-    // (note: line 1 is the second row, since counting begins with 0):
-    lcd.setCursor(0, 1);
-    // print the number of seconds since reset:
-    lcd.print(millis()/1000);
+void loop() {
+  int buttonState = digitalRead(BUTTON);
+  Serial.print("Button State: ");
+  Serial.println(buttonState);
 
-    delay(100);
+  if (buttonState == HIGH) {
+    digitalWrite(LED, HIGH);
+  }
+  else {
+    digitalWrite(LED, LOW);
+  }
+  delay(50);
 }
 ```
 
@@ -84,7 +73,7 @@ Servo myservo;
 int pos = 0;
 
 void setup() {
-  myservo.attach(D0); //Connect servo to D0
+  myservo.attach(PIN_SERIAL1_TX); //Connect servo to Grove UART Port
 }
 
 void loop() {
@@ -101,3 +90,9 @@ void loop() {
 ```
 
 **Note:** To use the Servo library with ReScreen, please include [Adafruit's version](https://github.com/PaintYourDragon/Servo) for SAMD51 capability.
+
+## UART Serial
+
+- The USB Serial in ReScreen: `Serial`
+
+- The broken out UART port: `Serial1`
