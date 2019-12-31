@@ -2,21 +2,25 @@
 
 <div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/2019-12-12%2011-36-22.2019-12-12%2011_37_02.gif"/></div>
 
-This repo demonstrates how to use the Grove Analog Port on Rescreen, you can simply use this plug and play functionality with the Grove Ecosystem!
+This repo demonstrates how to use Analog as inputs on ReScreen. To use analog pins on ReScreen, you must use RPI pins.
+
+## RPI Analog Pins
+
+The Raspberry Pi pinouts are defined as:
+
+- `RPI_A0` -> `RPI_A8`
 
 ## Port Configurations
 
-To use the Grove Port as Analog port, simply define it as follow:
-
-**Note:** A0 and A1 are the same Grove Port.
+To use the analog pins, simply define it as follow:
 
 ```cpp
 void setup() {
-    pinMode(A0, INPUT); //Configure as A0 analog port
+    pinMode(RPI_A0, INPUT); 
 }
 ```
 
-Now, connect your Grove sensor to the physical Grove Port!
+Now, connect your Grove sensor to the physical pin!
 
 ## Example Code 
 
@@ -25,10 +29,10 @@ In this example, a Grove Loudness sensor is used to demonstrate:
 ```cpp
 void setup() {
     Serial.begin(115200);
-    pinMode(A0, INPUT);
+    pinMode(RPI_A0, INPUT);
 }
 void loop() {
-    int loudness = analogRead(A0);
+    int loudness = analogRead(RPI_A0);
     Serial.print("Loudness: ");
     Serial.println(loudness);
     delay(50);
