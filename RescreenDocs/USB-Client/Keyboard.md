@@ -1,4 +1,4 @@
-# Overview
+# Using ReScreen as a Keyboard
 
 This repo introduces how to use the ReScreen as one of the USB device and in this exmaple, Rescreen is used as a simple keybaord. It has assigned 3 keys `s`, `e`, `d` to the 3 buttons of ReScreeen. This can be easily implemented into your design for more challenging tasks.
 
