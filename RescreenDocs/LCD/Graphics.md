@@ -25,6 +25,8 @@ void setup() {
     tft.fillScreen(TFT_RED); //Red background
     tft.drawPixel(4,7,TFT_BLACK); //drawing a black pixel at (4,7)
 }
+
+void loop() {}
 ```
 
 ## Drawing Lines
@@ -50,6 +52,8 @@ void setup() {
     tft.fillScreen(TFT_RED); //Red background
     tft.drawLine(0,0,160,120,TFT_BLACK); //drawing a black line from (0,0) to (160,120)
 }
+
+void loop() {}
 ```
 
 To draw Horizontal or Vertical lines, this librabry also provides optimised functions:
@@ -78,6 +82,8 @@ void setup() {
     tft.drawFastHLine(0,120,320,TFT_BLACK); //A black horizontal line starting from (0, 120)
     tft.drawFastVLine(160,0,240,TFT_BLACK); // A black vertical line starting from (160, 0)
 }
+
+void loop() {}
 ```
 
 ## Drawing Rectangles
@@ -105,6 +111,8 @@ void setup() {
     tft.fillScreen(TFT_RED); //Red background
     tft.drawRect(110,70,100,100,TFT_BLACK); //A 100x100 black rectangle starting from (110, 70)
 }
+
+void loop() {}
 ```
 
 ## Drawing Circles
@@ -131,6 +139,8 @@ void setup() {
     tft.fillScreen(TFT_RED); //Red background
     tft.drawCircle(160,120,50,TFT_BLACK); //A black circle origin at (160, 120)
 }
+
+void loop() {}
 ```
 
 This library also provides a function to draw or fill a ellipse:
@@ -156,6 +166,8 @@ void setup() {
     tft.drawEllipse(160,120,50,100,TFT_BLACK); 
     //A black ellipse origin at (160, 120) with horizontal radius of 50, and vertical radius of 100
 }
+
+void loop() {}
 ```
 
 ## Drawing Triangles
@@ -183,6 +195,8 @@ void setup() {
     tft.drawTriangle(160,70,60,170,260,170,TFT_BLACK);
     //A triangle with points at (160, 70), (60, 170) and (260, 170)
 }
+
+void loop() {}
 ```
 
 ## Drawing Round rectangles
@@ -210,6 +224,8 @@ void setup() {
     tft.drawRoundRect(110,70,100,100,10,TFT_BLACK);
     //A 100x100 black roudned rectangle starting from (110, 70)
 }
+
+void loop() {}
 ```
 
 ## Drawing Characters
@@ -237,6 +253,8 @@ void setup() {
     tft.drawChar(155,120,'B',TFT_BLACK, TFT_RED,2); //Draw a black character B from (155,120)
     tft.drawChar(170,120,'C',TFT_BLACK, TFT_RED,2); //Draw a black character C from (170,120)
 }
+
+void loop() {}
 ```
 
 ## Drawing Text Strings
@@ -267,6 +285,8 @@ void setup() {
   tft.setTextSize(2);
   tft.drawString("Hello world!", 0, 10);
 }
+
+void loop() {}
 ```
 
 ## Filling the Screen
@@ -297,4 +317,6 @@ void loop() {
     tft.fillScreen(TFT_BLUE);
     delay(1000);
 }
+
+void loop() {}
 ```
