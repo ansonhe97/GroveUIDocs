@@ -71,4 +71,5 @@ void setup() {
   tft.drawString("Serif 12pt",70,140);//prints string at (70,140)
   
 }
+void loop() {}
 ```
