@@ -1,4 +1,4 @@
-# Overview
+# Using ReScreen as a Mouse
 
 This repo introduce how to use the ReScreen as one of the USB deivce and in this example, Rescreen is used as a simple mouse by using the onboard accelerator and two buttons to represent the left and right click.
 
