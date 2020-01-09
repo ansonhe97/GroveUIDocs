@@ -14,7 +14,7 @@ To work with this exmaple, you will need a **USB OTG Adaptor** and a **USB to Se
 
 2. Unplug the USB type-C cable from ReScreen that used to upload the code.
 
-3. Connect your **keyboard** to the **OTG adaptor** then to the USB-C port of ReScreen.
+3. Connect your **Mouse** to the **OTG adaptor** then to the USB-C port of ReScreen.
    - **`Mouse`** -> **`OTG Adaptor`** -> **`ReScreen(Type-C Port)`**
 
 4. Connect the **USB to Serial Module** to the ReScreen as follow:
