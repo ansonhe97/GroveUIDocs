@@ -29,7 +29,7 @@ To work with this exmaple, you will need a **USB OTG Adaptor** and a **USB to Se
    - For Mac user, use `ls /dev/cu.*` in terminal to check the module availbility.
 
 7. To view data from Serial:
-   - **Windows:** Download and install [PuTTY](https://www.putty.org/). Select `Serial` and change the `COM` in Serial line to the COM that appeared in the Device Manager, also change the Speed. to `115200` and press Open. A Terminal should appear. Now, if you start pressing and movingthe mouse, you should see the serial output!
+   - **Windows:** Download and install [PuTTY](https://www.putty.org/). Select `Serial` and change the `COM` in Serial line to the COM that appeared in the Device Manager, also change the Speed. to `115200` and press Open. A Terminal should appear. Now, if you start pressing and moving the mouse, you should see the serial output!
 
    - **Mac:** Open terminal and install `screen` using `brew install screen`. Once installed, use the command **`screen /dev/cu.usbserial 115200`** where `/dev/cu.usbserial` should match from above. You should be see serial output from ReScreen!
 
