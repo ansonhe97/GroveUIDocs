@@ -25,11 +25,11 @@ void setup() {
     ...
     lis.click(1,THRESHOLD);
     //Interrupt signal to trigger when a tap is detected!
-    attachInterrupt(digitalPinToInterrupt(EXT_5), count, RISING);
+    attachInterrupt(digitalPinToInterrupt(GYROSCOPE_INT1), count, RISING);
 }
 ```
 
-**Note:** `EXT_5` is the Acclerometer Interrupt Pin 1.
+**Note:** `GYROSCOPE_INT1` is the Acclerometer Interrupt Pin 1.
 
 ## Complete Code
 
@@ -62,7 +62,7 @@ void setup() {
     //smaller the threshold value, the more sensitive
     lis.click(1, THRESHOLD);
     //Interrupt signal to trigger when a tap is detected!
-    attachInterrupt(digitalPinToInterrupt(EXT_5), count, RISING);
+    attachInterrupt(digitalPinToInterrupt(GYROSCOPE_INT1), count, RISING);
 }
 
 void loop() {
