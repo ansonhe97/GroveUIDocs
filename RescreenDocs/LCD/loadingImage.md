@@ -16,7 +16,7 @@ This repo describes how to load and display images from the SD card to the TFT L
 
 ### Installing the TFT LCD Library For Rescreen
 
-- visit [TFT LCD Overview](https://github.com/ansonhe97/GroveUIDocs/blob/master/RescreenDocs/TFT%20LCD%20Overview.md)
+- visit [TFT LCD Overview](https://github.com/ansonhe97/GroveUIDocs/tree/master/RescreenDocs/LCD)
 
 ## Image Format configuration
 
