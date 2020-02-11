@@ -59,7 +59,7 @@ void showHistogram();
 To change the values of existed columns:
 
 ```cpp
-void changeParam(uint8_t NO,String lable,float Histogram_value,uint16_t Histogram_WIDTH,uint32_t colour);
+void changeParam(uint8_t NO, String lable, float Histogram_value, uint32_t colour);
 ```
 
 where `NO` refers back to the number tag of the histogram column(which column to change).
@@ -118,7 +118,7 @@ void setup() {
   histogram.showHistogram(); //show histogram
   delay(3000);
 
-  histogram.changeParam(6,"F",55,50,TFT_PINK); //change column 6
+  histogram.changeParam(6,"F",55,TFT_PINK);//change column 6
   histogram.deleteCylinder(7);//delete coloum 7
   histogram.lineChart(TFT_BLACK);
 
