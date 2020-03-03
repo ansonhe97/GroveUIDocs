@@ -1,6 +1,6 @@
 # Rescreen displaying and storing analog data
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/C0282.2019-11-28%2018_28_03.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/C0282.2019-11-28%2018_28_03.gif"/></div>
 
 ## Overview
 
@@ -30,7 +30,7 @@ This example demonstrates using the line graph functions to display the Grove - 
 
 - **To intialise LCD and Analog port**
 
-<div align=center><img width=333 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-12-11_17-26-15.jpg"/></div>
+<div align=center><img width=333 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-12-11_17-26-15.jpg"/></div>
 
 As we can see, Rescreen has two Grove ports, one is defualt I2C port and the other is configurable Digital D0, D1 or Analog A0 and A1 ports, as well as UART ports. In this case, analog port is needed so defined as analog input.
 

@@ -1,6 +1,6 @@
 # Rescreen Interactive Emoji faces
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/C0274.2019-11-26%2014_50_05.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/C0274.2019-11-26%2014_50_05.gif"/></div>
 
 ## Overview
 

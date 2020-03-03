@@ -2,7 +2,7 @@
 
 This repo introduces how to install the official [Arduino Tensorflow Lite library](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro/examples/hello_world) into your Wio Terminal, allowing you to test out some Machine Learning models using Wio Terminal.
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200221174623.jpg"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200221174623.jpg"/></div>
 
 For more information, please visit [TensorFlow Lite For Microcontrollers](https://www.tensorflow.org/lite/microcontrollers).
 
@@ -10,11 +10,11 @@ For more information, please visit [TensorFlow Lite For Microcontrollers](https:
 
 1. Navigate to `Sketch` -> `Include Library` -> `Manager Libraries...` and a Library Manager will appear.
 
-![](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200221164034.jpg)
+![](https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200221164034.jpg)
 
 2. In the Library Manager, Search the keywords **Arduino TensorFlow Lite** and the library will appear. Under **Select Version**, select the one that is **NOT** precompiled and click Install.
 
-![](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200221164739.jpg)
+![](https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200221164739.jpg)
 
 ## Library Configurations
 
@@ -24,7 +24,7 @@ Now, we need to make a small adjustment to the library files in order for it to 
 
 2. Once inside the **Arduino_TensorFlowLite** file, navigate `src` -> `third_party` -> `kissfft` and open the **kiss_fft.h** file.
 
-![](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200221170104.jpg)
+![](https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200221170104.jpg)
 
 3. Use a code editor to open and find the line where it includes the `<sys/types.h>` header file, which look like this:
 
@@ -45,7 +45,7 @@ And change it to this:
 # if (FIXED_POINT == 32)
 ```
 
-<div align=center><img width = 400 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200221171349.jpg"/></div>
+<div align=center><img width = 400 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200221171349.jpg"/></div>
 
 Save the changes.
 
@@ -65,7 +65,7 @@ The sample is built around a model trained to replicate a sine function. It cont
 #include <TensorFlowLite.h>
 ```
 
-<div align=center><img width = 400 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200221173149.jpg"/></div>
+<div align=center><img width = 400 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200221173149.jpg"/></div>
 
 3. Now, click on **Upload** and upload your first TensorFlow Lite example to Wio Terminal!
 

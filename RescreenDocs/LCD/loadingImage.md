@@ -2,7 +2,7 @@
 
 This repo describes how to load and display images from the SD card to the TFT LCD screen on Rescreen. This can be very usefel implementation to your design and can be used in vairous places!
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/WechatIMG2314.jpeg.jpg"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/WechatIMG2314.jpeg.jpg"/></div>
 
 ## Libraries Installation
 
@@ -12,7 +12,7 @@ This repo describes how to load and display images from the SD card to the TFT L
 
 2. Now, the SD card library can be installed to the Arduino IDE. Open the Arduino IDE, and click `sketch` -> `Include Library` -> `Add .ZIP Library`, and choose the `Seeed_Arduino_FS-dev` file that you've have just downloaded.
 
-![InstallLibrary](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-11-21_15-50-13.jpg)
+![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
 ### Installing the TFT LCD Library For Rescreen
 
@@ -38,7 +38,7 @@ To display bmp images on our embedded system, we need to get rid of some informa
   
 - Now, you are able to find converted the `.bmp` images inside another folder name `rgb332`(8-bit) or `rgb565`(16-bit) in the bmp folder.
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/PythonScript.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/PythonScript.gif"/></div>
 
 ## Getting Started
 

@@ -2,7 +2,7 @@
 
 This repo describes how to use different free fonts(GNU FreeFonts) included in the library. You can follow this guide to choose your favourite font to display on the Rescreen!
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/WechatIMG2309.jpeg.jpg"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/WechatIMG2309.jpeg.jpg"/></div>
 
 ## Available Fonts
 

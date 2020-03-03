@@ -2,7 +2,7 @@
 
 This repo describes how to draw line graphs on Rescreen. You can use this to diaplay raw sensor values to visualise readings on screen just like the serial plotter! The library is very flexible and can alter to your own need.
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/C0277.2019-11-27%2018_19_05.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/C0277.2019-11-27%2018_19_05.gif"/></div>
 
 ## Libraries Installation
 
@@ -12,7 +12,7 @@ This repo describes how to draw line graphs on Rescreen. You can use this to dia
 
 - Now, the Rescreen_graphics library can be installed to the Arduino IDE. Open the Arduino IDE, and click `sketch` -> `Include Library` -> `Add .ZIP Library`, and choose the `rescreen_graphics` file that you've have just downloaded.
 
-![InstallLibrary](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-11-21_15-50-13.jpg)
+![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
 ## Getting Started
 
@@ -69,7 +69,7 @@ Some settings to configure the desired display of the title for line graph. Init
 
 To help understanding this exmaple code, please refer the title configurations to the image below:
 
-<div align=center><img width=645 height=374 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/title.png"/></div>
+<div align=center><img width=645 height=374 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/title.png"/></div>
 
 
 ### To initilise settings for the Line Graph and Draw on the LCD Screen
@@ -94,7 +94,7 @@ Some settings to configure the desired display of the Line graph. Initialise a `
 
 To help understanding this exmaple code, please refer the line graph configurations to the image below:
 
-<div align=center><img width=768 height=432 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/linegraph2.png"/></div>
+<div align=center><img width=768 height=432 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/linegraph2.png"/></div>
 
 ## Complete code
 

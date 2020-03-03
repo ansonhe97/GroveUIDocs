@@ -2,7 +2,7 @@
 
 This repo demonstrates how Rescreen used the built-in acclerator to sense the Single-click tapping or Double-click tapping motion!
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/2019-12-10%2010-33-58.2019-12-10%2010_35_11.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/2019-12-10%2010-33-58.2019-12-10%2010_35_11.gif"/></div>
 
 ## 3-Axis Accelerator Initialisation
 

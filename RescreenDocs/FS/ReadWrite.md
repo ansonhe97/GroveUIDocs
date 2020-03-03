@@ -1,6 +1,6 @@
 # Reading/Writing from the SD Card
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-12-16_13-53-10.jpg"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-12-16_13-53-10.jpg"/></div>
 
 This repo describes how to Read/Write from or to the SD Card. With this, you are able to load data from the SD Card, a simple demonstration will be storing sensor reading to the SD Card.
 

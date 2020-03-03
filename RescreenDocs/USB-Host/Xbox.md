@@ -2,7 +2,7 @@
 
 This repo introduces how to use a Xbox ONE Controller on ReScreen. With this exmaple, you can implement to use a Xbox Controller to play games using the ReScreen!
 
-<div align=center><img width = 500 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200109132336.gif"/></div>
+<div align=center><img width = 500 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200109132336.gif"/></div>
 
 ## Requirements
 

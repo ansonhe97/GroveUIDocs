@@ -1,6 +1,6 @@
 # Rescreen displaying Japanese text
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/IMG_0121.2019-12-03%2009_33_27.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/IMG_0121.2019-12-03%2009_33_27.gif"/></div>
 
 ## Overview
 

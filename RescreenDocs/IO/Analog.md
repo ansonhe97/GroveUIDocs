@@ -1,6 +1,6 @@
 # Using the Grove Analog Port on Rescreen
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/2019-12-12%2011-36-22.2019-12-12%2011_37_02.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/2019-12-12%2011-36-22.2019-12-12%2011_37_02.gif"/></div>
 
 This repo demonstrates how to use Analog as inputs on ReScreen. To use analog pins on ReScreen, you must use RPI pins.
 
@@ -10,9 +10,9 @@ The Raspberry Pi pinouts are defined as:
 
 - `RPI_A0` -> `RPI_A8`
 
-## Port Configurations
+## Grove Port Configurations
 
-To use the analog pins, simply define it as follow:
+To use the **Grove configurable A/D Port** as Analog port, simply define it as follow:
 
 ```cpp
 void setup() {

@@ -1,6 +1,6 @@
 # Rescreen Displaying Accelerator Readings
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/C0279.2019-11-28%2018_25_43.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/C0279.2019-11-28%2018_25_43.gif"/></div>
 
 ## Overview
 
@@ -8,7 +8,7 @@ This example demonstrates how to draw line graph on Rescreen. In this example, t
 
 ### Features
 
-- 3-axis accelerator readings displying in one Line graph
+- 3-axis accelerator readings displaying in one Line graph
 
 - Real time positioning of the Rescreen
 

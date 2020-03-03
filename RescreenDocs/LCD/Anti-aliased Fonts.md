@@ -2,7 +2,7 @@
 
 This repo demonstrates how to use Anti-aliased fonts in Wio Terminal (i.e. Displaying Japanese characters,Greek characters and other UCS-2 glyphs! Further, smooth fonts can also be used to display Normal English characters with your favorite font in your computer.
 
-<div align=center><img width = 600 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200117131650.gif"/></div>
+<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200117131650.gif"/></div>
 
 ## Libraries Installation
 
@@ -12,7 +12,7 @@ This repo demonstrates how to use Anti-aliased fonts in Wio Terminal (i.e. Displ
 
 2. Now, the SD card library can be installed to the Arduino IDE. Open the Arduino IDE, and click `sketch` -> `Include Library` -> `Add .ZIP Library`, and choose the `Seeed_Arduino_FS-dev` file that you've have just downloaded.
 
-![InstallLibrary](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-11-21_15-50-13.jpg)
+![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
 ### Installing the TFT LCD Library For Rescreen
 
@@ -26,31 +26,31 @@ Here demonstrates how to generate a vlw font file that can be used for smooth fo
 
 Download the [**Processing**](https://processing.org/) software and download according to your operating system.
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200117095509.jpg"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200117095509.jpg"/></div>
 
 ### Step 2
 
 Open **Processing**, and natigate to `Tools` -> `Create Font...`
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200117100029.jpg"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200117100029.jpg"/></div>
 
 ### Step 3
 
 A **Create Font** Window will appear. You are able to choose the font available from your computer. Change the font size, and click `Characters...`. You can also change the Filename of the vlw file.
 
-<div align=center><img width = 600 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200117100808.jpg"/></div>
+<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200117100808.jpg"/></div>
 
 ### Step 4
 
 A **Character Selector** window will appear, and you are able to choose the specific language Unicode Characters Blocks(i.e Basic Latin in this case). Click `OK` to save font settings.
 
-<div align=center><img width = 500 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200117104728.jpg"/></div>
+<div align=center><img width = 500 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200117104728.jpg"/></div>
 
 ### Step 5
 
 Navigate to `File` -> `Save` and save the sketch file into your local drive in your computer. Now, we have generated the vlw font file!
 
-<div align=center><img width = 500 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200117105224.jpg"/></div>
+<div align=center><img width = 500 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200117105224.jpg"/></div>
 
 ## Storing into SD Card
 

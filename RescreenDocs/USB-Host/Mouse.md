@@ -2,7 +2,7 @@
 
 This repo introduces how to use a USB Mouse on ReScreen. You can implement this example to input data from a Keyboard to ReScreen!
 
-<div align=center><img width = 500 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200108160611.gif"/></div>
+<div align=center><img width = 500 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200108160611.gif"/></div>
 
 ## Requirements
 

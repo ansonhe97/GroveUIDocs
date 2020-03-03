@@ -1,6 +1,6 @@
 # Rescreen Displaying photos
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/products.2019-11-26%2017_40_45.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/products.2019-11-26%2017_40_45.gif"/></div>
 
 ## Overview
 

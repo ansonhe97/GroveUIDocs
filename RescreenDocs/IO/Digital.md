@@ -1,6 +1,6 @@
 # Using the Grove Digital Port on Rescreen
 
-<div align=center><img src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/2019-12-12%2014-55-44.2019-12-12%2014_56_10.gif"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/2019-12-12%2014-55-44.2019-12-12%2014_56_10.gif"/></div>
 
 This repo demonstrates how to use the Grove Ports on ReScreen as Digital Ports. You can simply use this functionality to play with the Grove Ecosystem!
 
@@ -12,11 +12,11 @@ The Raspberry Pi pinouts are defined as:
 
 ## Grove Port Configurations
 
-To use the **Grove UART Port** as Digital port, simply define it as follow:
+To use the **Grove configurable A/D Port** as Digital port, simply define it as follow:
 
 ```cpp
 void setup() {
-    pinMode(PIN_SERIAL1_TX, INPUT); //Configure UART TX as Digital port
+    pinMode(RPI_DO, INPUT); //Configure UART TX as Digital port
 }
 ```
 
@@ -38,7 +38,7 @@ Now, connect your Grove sensor to the physical Grove Port!
 In this example, a Grove Button and Grove LED are used to demonstrate:
 
 ```cpp
-#define BUTTON PIN_SERIAL1_TX //Button to Grove UART Port
+#define BUTTON RPI_DO //Button to Grove UART Port
 #define LED PIN_WIRE_SCL //LED to Grove I2C Port
 
 void setup() {
@@ -73,7 +73,7 @@ Servo myservo;
 int pos = 0;
 
 void setup() {
-  myservo.attach(PIN_SERIAL1_TX); //Connect servo to Grove UART Port
+  myservo.attach(RPI_DO); //Connect servo to Grove UART Port
 }
 
 void loop() {

@@ -4,7 +4,7 @@ This Repo will demonstrate how to use SPI on Rescreen. You can use this to contr
 
 ## Port Configurations
 
-<div align=center><img width = 600 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-12-13_14-16-23.jpg"/></div>
+<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2020-03-03_12-28-09.jpg"/></div>
 
 As you can see, the physical SPI Pins are as follow:
 

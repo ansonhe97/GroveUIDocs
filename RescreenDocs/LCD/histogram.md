@@ -2,7 +2,7 @@
 
 This repo describes how to draw histogram on ReScreen. Similar to the Line Charts library, you can use this to display raw sensor values to visulise readings on screen. This library is very flexible and can modify to your own need.
 
-<div align=center><img width = 600 src="https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/20200114131505.png"/></div>
+<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200114131505.png"/></div>
 
 
 ## Libraries Installation
@@ -13,7 +13,7 @@ This repo describes how to draw histogram on ReScreen. Similar to the Line Chart
 
 - Now, the  library can be installed to the Arduino IDE. Open the Arduino IDE, and click `sketch` -> `Include Library` -> `Add .ZIP Library`, and choose the `Seeed_Arduino_LCD` file that you've have just downloaded.
 
-![InstallLibrary](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/Xnip2019-11-21_15-50-13.jpg)
+![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
 ## Getting Started
 
