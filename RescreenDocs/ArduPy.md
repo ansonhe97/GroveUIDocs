@@ -8,13 +8,29 @@ For more information, please see [Ardupy](https://github.com/Seeed-Studio/ArduPy
 
 ## Getting Started
 
-1. 刷固件
+### 1. Dependency
 
-## Installing the ArduPy IDE
+**Python 3** is required for the ArduPy, so please download and install [Python 3](https://www.python.org/downloads/) into your environment before the following.
+
+### 2. Install the Aip
+
+Aip is a package manager for converting Arduino Libraries into Python interfaces, which is essential for ArduPy.
+
+1. Use **pip** to install the **`ardupy-aip`**. Run the following command:
+
+```sh
+pip3 install ardupy-aip
+```
+
+**Note:** For Windows user, use **Powershell**. For Linux or Mac OS users, use **Terminal**.
+
+2. Once the dependencies are installed, you can run `aip` in all directory to see help, and check if errors appeared.
+
+### 3. Install the ArduPy IDE
 
 To use ArduPy, we need to use another IDE other than Arduino IDE to compile (and upload) the MicroPython code into our device.
 
-### Installing Steps
+#### Installing Steps
 
 1. Download and install the [Visual Studio Code](https://code.visualstudio.com/Download) IDE according to your OS.
 
@@ -30,21 +46,49 @@ To use ArduPy, we need to use another IDE other than Arduino IDE to compile (and
 
 Once installed the Seeed ArduPy IDE plug-in in VS code, you can start playing with MicroPython!
 
-## Connecting with the Device
+### 4. Connecting with the Device
 
-- Connect the device to your PC via a USB cable. 
+1. Connect the device to your PC via a USB cable. 
 
-- On the Bottom of the VS Code IDE, you should be able to see a **Device Connection (Plug Symbol)**. Click the Device Connection symbol, a windows will appear with all the available serial connections.
+2. On the Bottom of the VS Code IDE, you should be able to see a **Device Connection (Plug Symbol)**. Click the Device Connection symbol, a windows will appear with all the available serial connections.
 
-- Click on the right serial connection(Your Device) to connect.
+3. Click on the right serial connection(Your Device) to connect.
 
     - **Windows**: `COMxx`.
 
     - **Mac Os**: `/dev/cu.usbmodem14xxxx`.
 
-- Once connected, a terminal window will appear in the bottom and device is connected with the Seeed ArduPy IDE!
+4. Once connected, a window will appear in the bottom and check if the ArduPy firmware is already loaded into the device.
 
-To test the connection, we can simply type the `help()` function in the terminal prompt and should return a message.
+Choose **Yes** and it will download and load the latest ArduPy firmware onto the device and you can start programming your device in Python Syntax!
+
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Ardupy-Firmware.png"/></div>
+
+## IDE Basics
+
+<div align=center><img width = 400 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/IDE-icons.png"/></div>
+
+Once connected, the device name should appear at the bottom of the IDE and you can use the features to start programming with ArduPy.
+
+**Features(Left to Right):**
+
+- Create a MicroPython Project
+
+- Open the MicroPython Terminal
+
+- Run the MicroPython Project
+
+- Status
+
+### Adding Files
+
+<div align=center><img width = 350 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/IDE-open.png"/></div>
+
+To add files to the device using ArduPy, simply click the icon as shown above to choose files from your PC.
+
+### Boot Script
+
+To run a MicroPython script from boot up, simply name your project **`boot.py`** and load the files in the device as methods mentioned above.
 
 ## Time and Delay
 
@@ -174,8 +218,6 @@ lcd.fillScreen(lcd.color.BLACK)        # Fill the LCD screen with color black
 lcd.setTextSize(2)                     # Setting font size to 2
 lcd.setTextColor(lcd.color.GREEN)      # Setting test color to Green
 lcd.drawString("Hello World!", 0, 0)   # Printing Hello World at (0, 0)
-
-
 ```
 
 Note: Use **`tab`**  to see the available functions.
