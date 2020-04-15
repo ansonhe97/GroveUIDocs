@@ -67,23 +67,26 @@ Download the latest [**RTL8720 Firmware**]() Here.
 
 <div align=center><img width = 300 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Select-chip.png"/></div>
 
-- **Select the correct Serial Port for Wio Terminal.** In my case, it's COM11. Set the Baudrate to **115200**. Under **Flash Download** session, click on **Browse**:
+- **Select the correct Serial Port for Wio Terminal.** In my case, it's COM11. Set the Baudrate to **115200**. Under **Flash Erase** session, Type **`0x08000000`** into Address and **`2048`** KB into Size, and click **Erase**:
 
-<div align=center><img width = 450 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Select-port.png"/></div>
+<div align=center><img width = 450 src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/Erase.png"/></div>
+
+!!!attention
+          You **must erase the Wi-Fi core** when you received the Wio Terminal the first time.
+
+-   Under **Flash Download** session, click on **Browse** on these 3 image path:
+
+**Note:** Browse the right bin (downloaded from above) in each Image path as follow.
+
+<div align=center><img width = 450 src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/Select-firmware.png"/></div>
 
 - Choose the **RTL8720 Firmware** file that you downloaded from above, **tick the box**, and click on **Download** to load the firmware:
 
-**Note:** Make sure the Baudrate is set to 115200.
+<div align=center><img width = 450 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Select-bin.png"/></div>
 
-<div align=center><img width = 450 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Select-firmware.png"/></div>
+- The RTL8720 firmware will start writing to the chip on Wio Terminal, please wait patiently until it's done. Once it's uploaded successfully, you should be to see a window as shown:
 
-- The RTL8720 firmware will start writing to the chip on Wio Terminal, please wait patiently until it's done:
-
-<div align=center><img width = 450 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/update.png"/></div>
-
-- Once it's uploaded successfully, you should be to see a window as shown:
-
-<div align=center><img width = 450 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/rtl-done.png"/></div>
+<div align=center><img width = 450 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/RTL-done.png"/></div>
 
 Now, the latest RTL8720 firmware is loaded onto the board.
 
@@ -105,13 +108,13 @@ There are few Arduino Libraries that are needed for the Wireless connectivity. F
 
 2. Now, the Seeed-Arduino-FreeRTOS library can be installed to the Arduino IDE. Open the Arduino IDE, and click `sketch` -> `Include Library` -> `Add .ZIP Library`, and choose the `Seeed-Arduino-FreeRTOS` file that you've have just downloaded.
 
-### 3. Install Seeed_Arduino_atUnified
+### 3. Install the Seeed_Arduino_atUnified
 
 1. Visit the [Seeed_Arduino_atUnified](https://github.com/Seeed-Studio/Seeed_Arduino_atUnified) repositories and download the entire repo to your local drive.
 
 2. Now, the Seeed_Arduino_atUnified library can be installed to the Arduino IDE. Open the Arduino IDE, and click `sketch` -> `Include Library` -> `Add .ZIP Library`, and choose the `Seeed_Arduino_atUnified` file that you've have just downloaded.
 
-### 4. Install Seeed_Arduino_atWiFi
+### 4. Install the Seeed-Studio/esp-at-lib
 
 1. Visit the [Seeed-Studio/esp-at-lib](https://github.com/Seeed-Studio/esp-at-lib) repositories and download the entire repo to your local drive.
 
