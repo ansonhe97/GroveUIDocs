@@ -44,6 +44,8 @@ pip3 install ardupy-aip
 aip help
 ```
 
+<div align=center><img width = 550 src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/aip-help.png"/></div>
+
 - To get board information:
 
 ```sh
@@ -58,10 +60,24 @@ aip install <ArduPy Library Path>
 # aip install Seeed-Studio/seeed-ardupy-ultrasonic-sensor
 ```
 
+- To uninstall ArduPy libraries:
+
+```sh
+aip uninstall <ArduPy Library Path> 
+# Example Usage: 
+# aip uninstall Seeed-Studio/seeed-ardupy-ultrasonic-sensor
+```
+
 - To build ArduPy Firmware contains the libraries you installed and the basic ArduPy features:
 
 ```sh
 aip build
+```
+
+- To list installed ArduPy Libraries
+
+```sh
+aip list
 ```
 
 - To flash ArduPy Firmware into hardware:
@@ -70,15 +86,98 @@ aip build
 aip flash
 ```
 
-- To interact with the board using mpfshell:
+!!!Note
+        After commands, you use `-h` flags to see more usage for that command. For example, `aip flash -h`
+
+- To interact with the board:
+
+```sh
+aip shell
+```
+
+**Note:** Once entered the shell, you can use `help` for more information.
+
+- Entering **REPL** mode:
 
 ```sh
 aip shell -c "repl"
 ```
 
-!!!Note
-        After commands, you use `-h` flags to see more usage for that command. For example, `aip flash -h`
+<div align=center><img width = 550 src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/aip-shell.png"/></div>
 
+- To run Python file:
+
+```sh
+aip shell -n -c "runfile <YourPythonFilePath> [Path]"
+# Example Usage:
+# aip shell -n -c "runfile /Users/ansonhe/Desktop/ur.py"
+```
+
+- To load files into the board using shell:
+
+```sh
+aip shell -n -c "put <YourPythonFilePath> [Path]"
+# Example Usage:
+# aip shell -n -c "put /Users/ansonhe/Desktop/ur.py"
+```
+
+### Boot Script
+
+To run a MicroPython script from boot up, simply name your project **`boot.py`** in the root location of the board.
+
+
+## Using aip to include Other ArduPy Libraries(From Arduino Libraries) Example
+
+Aip is one of the key feature of ArduPy, which can be used to convert Arduino Libraries to Python Interface to be used for ArduPy. Here we provide an example, how to include the ArduPy library into ArduPy Firmware:
+
+**Tip:** We provide few ArduPy library examples on the github page for now, and soon will release tutorials how to convert Arduino libraries to ArduPy Libraries very soon.
+
+1.Open Terminal/Powershell or in VS code, run the following to install ardupy libraries.
+
+```sh
+aip install Seeed-Studio/seeed-ardupy-ultrasonic-sensor
+```
+
+2.Build the firmware:
+
+```sh
+aip build
+```
+
+**Note:** Usage of flashing firmware will appeared at the bottom of build.
+
+3.Flash the "**NEW**" firmware into the board **by copying the usage from end of build**. Here aip will automatically look for the board connected to the PC and upload the firmware. If board is not connected, an error will appear.
+
+```sh
+aip flash
+```
+
+<div align=center><img src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/aip-install-new.gif"/></div>
+
+!!!Note
+        You can also use `aip build clean` before `aip build` to remove any caches from before to avoid error.
+
+### Example Usage
+
+Once the library is included within the ArduPy firmware and flashed into the device, you can import and use the module as follow:
+
+<div align=center><img width = 500 src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/ur.gif"/></div>
+
+```py
+from arduino import grove_ultra_ranger
+import time
+
+ur = grove_ultra_ranger(0)
+
+while True:
+    print ("The distance to obstacles in front is:", ur.cm, 'centimeter')
+    time.sleep(1)
+```
+
+
+### FAQ
+
+For more aip reference, please visit [ardupy-aip](https://github.com/Seeed-Studio/ardupy-aip) to find out more.
 
 ## IDE Getting Started
 
@@ -145,69 +244,6 @@ To add files to the device using ArduPy, simply click the icon as shown above to
 ### Boot Script
 
 To run a MicroPython script from boot up, simply name your project **`boot.py`** and load the files in the device as methods mentioned above.
-
-## Using aip to include Other ArduPy Libraries(From Arduino Libraries) Example
-
-Aip is one of the key feature of ArduPy, which can be used to convert Arduino Libraries to Python Interface to be used for ArduPy. Here we provide an example, how to include the ArduPy library into ArduPy Firmware:
-
-**Tip:** We provide few ArduPy library examples on the github page for now, and soon will release tutorials how to convert Arduino libraries to ArduPy Libraries very soon.
-
-<!-- !!!Note
-        By default, the ArduPy initial firmware only includes **time, Pin, DAC, ADC, PWM and LCD**.
-
-1.**Download** the arduPy-aip tool:
-
-- For [**Windows**](http://files.seeedstudio.com/ardupy/tools/aip.exe).
-
-- For [**Mac Os**](http://files.seeedstudio.com/ardupy/tools/aip_mac). -->
-
-1.Open Terminal/Powershell or in VS code, run the following to install ardupy libraries.
-
-```sh
-aip install Seeed-Studio/seeed-ardupy-ultrasonic-sensor
-```
-
-<!-- **Note: For Mac OS, please use `chmod +x aip_mac` to obtain permission. Also, use `aip_mac` to replace `aip`** -->
-
-2.Build the firmware:
-
-```sh
-aip build
-```
-
-**Note:** Usage of flashing firmware will appeared at the bottom of build.
-
-3.Flash the "**NEW**" firmware into the board **by copying the usage from end of build**. Here aip will automatically look for the board connected to the PC and upload the firmware. If board is not connected, an error will appear.
-
-```sh
-aip flash
-```
-
-<div align=center><img width = 500 src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/aip-install-n.gif"/></div>
-
-!!!Note
-        You can also use `aip build clean` before `aip build` to remove any caches from before to avoid error.
-
-### Example Usage
-
-Once the library is included within the ArduPy firmware and flashed into the device, you can import and use the module as follow:
-
-<div align=center><img width = 500 src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/ur.gif"/></div>
-
-```py
-from arduino import grove_ultra_ranger
-import time
-
-ur = grove_ultra_ranger(0)
-
-while True:
-    print ("The distance to obstacles in front is:", ur.cm, 'centimeter')
-    time.sleep(1)
-```
-
-### FAQ
-
-For more aip reference, please visit [ardupy-aip](https://github.com/Seeed-Studio/ardupy-aip) to find out more.
 
 ## Time and Delay
 
