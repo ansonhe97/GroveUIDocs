@@ -12,7 +12,7 @@ For macOS user, you can simply run the following in Terminal to install ArduPy-a
 pip3 install ardupy-aip
 ```
 
-**Note:** please make sure that you have installed Python 3 on macOS. To install Python 3, you can use [Homebrew](https://brew.sh/) which is a software package manager for macOS. Once installed Homebrew, run the following to install python 3: **`brew install python3`**
+**Note:** please make sure that you have installed Python 3 on macOS. To install Python 3, you can use [Homebrew](https://brew.sh/) which is a software package manager for macOS. Once installed Homebrew, run the following to install python 3: **`brew install python3`**.
 
 ## Install with Windows
 
@@ -89,13 +89,13 @@ aip flash
 !!!Note
         After commands, you use `-h` flags to see more usage for that command. For example, `aip flash -h`
 
-- To interact with the board:
+- To interact with the board (shell-based file explorer):
 
 ```sh
 aip shell
 ```
 
-**Note:** Once entered the shell, you can use `help` for more information.
+**Note:** Once entered the ardupy-mpfshell, you can use `help` for more information and commands.
 
 - Entering **REPL** mode:
 
@@ -125,6 +125,33 @@ aip shell -n -c "put <YourPythonFilePath> [Path]"
 
 To run a MicroPython script from boot up, simply name your project **`boot.py`** in the root location of the board.
 
+### Usage under ardupy-mpfshell
+
+Once entered ardupy-mpfshell, use `help` to check commands usage. Here listed some useful commands:
+
+- To list files on the deivces:
+
+```sh
+ls
+```
+
+- To remove a file (or a directory) on the device:
+
+```sh
+rm <File/Directory>
+```
+
+- To upload e.g. the local file `boot.py` to the device:
+
+```sh
+put <YourPythonFilePath> [Path]
+```
+
+- To execute the files i.e. `test.py` on the device:
+
+```sh
+execfile test.py
+```
 
 ## Using aip to include Other ArduPy Libraries(From Arduino Libraries) Example
 
