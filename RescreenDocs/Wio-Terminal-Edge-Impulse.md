@@ -41,6 +41,8 @@ From a command prompt or terminal run:
 $ edge-impulse-daemon
 ```
 
+**NOTE:** When connecting to a new device, run `edge-impulse-daemon --clean` to remove previous cached.
+
 ### 3. Verifying that the device is connected
 
 That's all! Your device is now connected to Edge Impulse. To verify this, [go to your Edge Impulse project](https://studio.edgeimpulse.com/studio/select-project?autoredirect=1), and click Devices. The device will be listed here.
