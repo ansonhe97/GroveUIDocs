@@ -28,10 +28,10 @@ If your device is connected under Devices in the studio you can proceed:
 
 With your device connected we can collect some data. In the studio go to the **Data acquisition** tab. This is the place where all your raw data is stored, and - if your device is connected to the remote management API - where you can start sampling new data.
 
-Under **Record new data**, select your device, set the label to `idle`, the sample length to `5000`, the sensor to **Built-in accelerometer** and the frequency to `62.5Hz`. This indicates that you want to record data for 10 seconds, and label the recorded data as `idle`. You can later edit these labels if needed.
+Under **Record new data**, select your device, set the label to `idle`, the sample length to `5000`, the sensor to **`Built-in accelerometer`** and the frequency to `62.5Hz`. This indicates that you want to record data for 10 seconds, and label the recorded data as `idle`. You can later edit these labels if needed.
 
 !!!Note
-        There is also another options for `built-in multichannel gas`, this uses the [Grove - Multichannel Gas Sensor v2](https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-v2-p-4569.html) for collecting gas sensor values.
+        There is also another options for `External multichannel gas`, this uses the [Grove - Multichannel Gas Sensor v2](https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-v2-p-4569.html) for collecting gas sensor values.
 
 <div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/record.png"/></div>
 
