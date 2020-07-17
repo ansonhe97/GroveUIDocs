@@ -33,7 +33,7 @@ edge-impulse-daemon
 
 Terminal should look something like this:
 
-<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/EI-serial.png"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/EI-serial.png"/></div>
 
 Now, navigate to [**Edge Impulse homepage**](https://studio.edgeimpulse.com/studio/4578/devices) and login the same account. Navigate to **Devices** and you should see the device:
 
@@ -57,7 +57,7 @@ On the **Edge Impulse dashboard**, navigate to **Data acquisition**, choose your
 
 Click **Start Sampling** and it will start to collect data, which the terminal should look something like this:
 
-<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/sending.png"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/sending.png"/></div>
 
 In my test, I have obtained Beer data for **10s** for **6 time** and each time they have similar results. You will need to have data sets are fairy similar to each other.
 
@@ -115,17 +115,17 @@ Now we have the model trained, we can test the model with new data. Navigate to 
 
 - Testing Example 1:
 
-<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/result-1.png"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/result-1.png"/></div>
 
 - Testing Example 2:
 
-<div align=center><img width = 600 src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/result-2.png"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/result-2.png"/></div>
 
 As we can see from the results, this is pretty good results where you are able to distinguish alcohol using the Grove - Multichannel Gas Sensor v2 with the help of Edge Impulse!
 
 ## Further Development
 
-For now, implementing the model back into Wio Terminal as a library is still being developed. It will be released very soon, and then you can detect alcohol 'offline' with the trained model loaded onto Wio Terminal!
+**For now, implementing the model back into Wio Terminal as a library is still being developed**. It will be released very soon, and then you can detect alcohol 'offline' with the trained model loaded onto Wio Terminal!
 
 ## Resources
 
