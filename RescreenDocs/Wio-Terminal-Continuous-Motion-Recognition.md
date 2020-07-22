@@ -42,7 +42,7 @@ After you click Start sampling move your device up and down in a continuous moti
 
 <div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/data.png"/></div>
 
-Machine learning works best with lots of data, so a single sample won't cut it. Now is the time to start building your own dataset. For example, use the following four classes, and record around 3 minutes of data per class:
+Machine learning works best with lots of data, so a single sample won't cut it. Now is the time to start building your own dataset. For example, use the following three classes, and record around 3 minutes of data per class:
 
 - Idle - just sitting on your desk while you're working.
 - Wave - waving the device from left to right.
@@ -55,7 +55,7 @@ Machine learning works best with lots of data, so a single sample won't cut it. 
 
 With the training set in place you can design an impulse. An impulse takes the raw data, slices it up in smaller windows, uses signal processing blocks to extract features, and then uses a learning block to classify new data. Signal processing blocks always return the same values for the same input and are used to make raw data easier to process, while learning blocks learn from past experiences.
 
-For this tutorial we'll use the 'Spectral analysis' signal processing block. This block applies a filter, performs spectral analysis on the signal, and extracts frequency and spectral power data. Then we'll use a 'Neural Network' learning block, that takes these spectral features and learns to distinguish between the four (idle, snake, wave, updown) classes.
+For this tutorial we'll use the 'Spectral analysis' signal processing block. This block applies a filter, performs spectral analysis on the signal, and extracts frequency and spectral power data. Then we'll use a 'Neural Network' learning block, that takes these spectral features and learns to distinguish between the three (idle, circle, wave) classes.
 
 In the studio go to **Create impulse**, set the window size to `2000` (you can click on the `2000 ms`. text to enter an exact value), the window increase to `80`, and add the 'Spectral Analysis' and 'Neural Network (Keras)' blocks. Then click **Save impulse**.
 
@@ -84,7 +84,7 @@ Afterwards the 'Feature explorer' will load. This is a plot of all the extracted
 
 ### Configuring the neural network
 
-With all data processed it's time to start training a neural network. Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. The network that we're training here will take the signal processing data as an input, and try to map this to one of the four classes.
+With all data processed it's time to start training a neural network. Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. The network that we're training here will take the signal processing data as an input, and try to map this to one of the three classes.
 
 So how does a neural network know what to predict? A neural network consists of layers of neurons, all interconnected, and each connection has a weight. One such neuron in the input layer would be the height of the first peak of the X-axis (from the signal processing block); and one such neuron in the output layer would be wave (one the classes). When defining the neural network all these connections are intialized randomly, and thus the neural network will make random predictions. During training we then take all the raw data, ask the network to make a prediction, and then make tiny alterations to the weights depending on the outcome (this is why labeling raw data is important).
 
@@ -121,7 +121,7 @@ With a working model in place we can look at places where our current impulse pe
 
 ## 5. Anomaly detection
 
-Neural networks are great, but they have one big flaw. They're terrible at dealing with data they have never seen before (like a new gesture). Neural networks cannot judge this, as they are only aware of the training data. If you give it something unlike anything it has seen before it'll still classify as one of the four classes.
+Neural networks are great, but they have one big flaw. They're terrible at dealing with data they have never seen before (like a new gesture). Neural networks cannot judge this, as they are only aware of the training data. If you give it something unlike anything it has seen before it'll still classify as one of the three classes.
 
 Let's look at how this works in practice. Go to 'Live classification' and record some new data, but now vividly shake your device. Take a look and see how the network will predict something regardless.
 
