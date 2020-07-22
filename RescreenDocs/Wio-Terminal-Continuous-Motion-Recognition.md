@@ -8,9 +8,9 @@ There is also a video version of this tutorial:
 
 ## 1. Prerequisites
 
-For this tutorial you'll need a supported device. Follow [Wio Terminal Edge Impulse]() tutorial fist before the followings.
+For this tutorial you'll need a supported device. Follow [**Wio Terminal Edge Impulse**](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse) tutorial fist before the followings.
 
-Apart from Wio Terminal, here are other supported devices.
+Apart from **Wio Terminal**, here are other supported devices.
 
 - [ST B-L475E-IOT01A](https://docs.edgeimpulse.com/docs/unboxing-the-st-b-l475e-iot01a)
 - [Arduino Nano 33 BLE Sense](https://docs.edgeimpulse.com/docs/arduino-nano-33-ble-sense)
@@ -60,7 +60,7 @@ For this tutorial we'll use the 'Spectral analysis' signal processing block. Thi
 
 In the studio go to **Create impulse**, set the window size to `2000` (you can click on the `2000 ms`. text to enter an exact value), the window increase to `80`, and add the 'Spectral Analysis' and 'Neural Network (Keras)' blocks. Then click **Save impulse**.
 
-<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/impulse.png"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/impulse-motion.png"/></div>
 
 ### Configuring the spectral analysis block
 
@@ -161,6 +161,8 @@ Edge Impulse helps you unlock this data. By processing data directly on the devi
 ## Reference
 
 - [Edge Impulse Continuous motion recognition](https://docs.edgeimpulse.com/docs/continuous-motion-recognition)
+
+- [Wio Terminal Edge Impulse Getting Started](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)
 
 ## Tech Support
 

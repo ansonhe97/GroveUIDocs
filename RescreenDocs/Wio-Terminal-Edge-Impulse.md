@@ -33,6 +33,9 @@ Connect Wio Terminal to your computer. Entering the bootloader mode by sliding t
 
 An external drive named `Arduino` should appear in your PC. Drag the the downloaded **[Edge Impulse uf2 firmware files]()** to the `Arduino` drive. Now, Edge Impulse is loaded on Seeeduino Wio Terminal!
 
+!!!Note
+        Here is the [Wio Terminal Edge Impulse source code](https://github.com/Seeed-Studio/Seeed_Arduino_edgeimpulse), you can also build the firmware from here.
+
 ### 2. Setting Keys
 
 From a command prompt or terminal run:
@@ -53,7 +56,8 @@ That's all! Your device is now connected to Edge Impulse. To verify this, [go to
 
 With everything set up you can now build your first machine learning model with these tutorials:
 
-- [Building a continuous motion recognition system]().
+- [Building a continuous motion recognition system](http://wiki.seeedstudio.com/Wio-Terminal-Continuous-Motion-Recognition).
+- [Distinguishing Alcohol using Wio Terminal with Edge Impulse](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse-Distinguish-Alochol)
 
 Looking to connect different sensors? The [Data forwarder](https://docs.edgeimpulse.com/docs/cli-data-forwarder) lets you easily send data from any sensor into Edge Impulse.
 
