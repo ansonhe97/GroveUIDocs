@@ -45,9 +45,8 @@ After you click Start sampling move your device up and down in a continuous moti
 Machine learning works best with lots of data, so a single sample won't cut it. Now is the time to start building your own dataset. For example, use the following four classes, and record around 3 minutes of data per class:
 
 - Idle - just sitting on your desk while you're working.
-- Snake - moving the device over your desk as a snake.
 - Wave - waving the device from left to right.
-- Updown - moving the device up and down.
+- Circle - drawing circles.
 
 !!!Note
         Make sure to perform variations on the motions. E.g. do both slow and fast movements and vary the orientation of the board. You'll never know how your user will use the device. It's best to collect samples of ~10 seconds each.
@@ -81,7 +80,7 @@ Click **Generate features** to start the process.
 
 Afterwards the 'Feature explorer' will load. This is a plot of all the extracted features against all the generated windows. You can use this graph to compare your complete data set. E.g. by plotting the height of the first peak on the X-axis against the spectral power between 0.5 Hz and 1 Hz on the Y-axis. A good rule of thumb is that if you can visually separate the data on a number of axes, then the machine learning model will be able to do so as well.
 
-<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/features.png"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/features-motion.png"/></div>
 
 ### Configuring the neural network
 
@@ -93,7 +92,7 @@ This way, after a lot of iterations, the neural network learns; and will eventua
 
 Set 'Number of training cycles' to `1`.. This will limit training to a single iteration. And then click Start training.
 
-<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/perf.png"/></div>
+<div align=center><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/perf-motion.png"/></div>
 
 Now change 'Number of training cycles' to `2` and you'll see performance go up. Finally, change 'Number of training cycles' to `100` or more and let training finish. You've just trained your first neural network!
 
