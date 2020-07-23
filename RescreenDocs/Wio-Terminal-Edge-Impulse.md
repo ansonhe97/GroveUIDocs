@@ -31,7 +31,7 @@ Connect Wio Terminal to your computer. Entering the bootloader mode by sliding t
 
 <div align=center><img width=500 src="https://files.seeedstudio.com/wiki/Wio-Terminal-CircuitPython/dfu.gif"/></div>
 
-An external drive named `Arduino` should appear in your PC. Drag the the downloaded **[Edge Impulse uf2 firmware files]()** to the `Arduino` drive. Now, Edge Impulse is loaded on Seeeduino Wio Terminal!
+An external drive named `Arduino` should appear in your PC. Drag the the downloaded [**Edge Impulse uf2 firmware files**](http://files.seeedstudio.com/wiki/Wio-Terminal-Edge-Impulse/res/EdgeImpulse.uf2) to the `Arduino` drive. Now, Edge Impulse is loaded on Seeeduino Wio Terminal!
 
 !!!Note
         Here is the [Wio Terminal Edge Impulse source code](https://github.com/Seeed-Studio/Seeed_Arduino_edgeimpulse), you can also build the firmware from here.
